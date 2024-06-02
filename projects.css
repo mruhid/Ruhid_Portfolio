@@ -1,0 +1,380 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,700;1,500&display=swap");
+
+* {
+  box-sizing: border-box;
+
+  padding: 0;
+
+  margin: 0;
+
+  font-family: "Poppins", sans-serif;
+
+  text-decoration: none;
+
+  list-style: none;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* Header styles */
+header {
+  position: fixed;
+  background-color: #f7f7f2;
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.5s ease;
+
+  width: 100%;
+
+  top: 0;
+
+  right: 0;
+
+  z-index: 1000;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  padding: 2rem 8rem;
+}
+
+.logo {
+  color: #1e1e24;
+
+  font-size: 1.2rem;
+
+  font-weight: 600;
+}
+.navmenu {
+  display: flex;
+}
+
+.navmenu a {
+  display: inline-block;
+  padding: 10px 20px;
+
+  margin: 0 1.5rem;
+
+  color: #1e1e24;
+
+  font-weight: 500;
+
+  transition: all 0.6s;
+}
+.navmenu a.active {
+  background-color: black;
+  color: white;
+  border-radius: 0.7rem;
+}
+
+.navmenu a:hover {
+  transform: translateY(-5px);
+}
+/* ----projects---- */
+#projects {
+  padding: 20px;
+  margin: 100px auto;
+  display: grid;
+  text-align: center;
+  grid-template-columns: repeat(1fr, 1);
+}
+#projects h1 {
+  font-size: 40px;
+  color: orangered;
+}
+
+.project {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  margin: 10px;
+  flex-wrap: wrap;
+  background-color: #201658;
+  color: white;
+  border-radius: 20px;
+}
+.project_img {
+  padding: 10px;
+  background-color: white;
+  border-radius: 10px;
+  border: 1px solid black;
+  display: block;
+}
+.project_img img {
+  width: 600px;
+  height: 400px;
+  object-fit: contain;
+}
+.technology {
+  text-align: start;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.link {
+  flex-direction: column;
+  color: white;
+}
+.github {
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.github a {
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: white;
+  display: inline-block;
+  transition: all 0.5s;
+}
+.github a:hover {
+  transform: translateY(5px);
+}
+.webLink a {
+  color: white;
+  margin: 10px;
+}
+.webLink a:hover {
+  border-bottom: 1px solid;
+}
+/* ---language-switcher--- */
+.switch-lang {
+  font-size: 16px;
+  color: white;
+  width: 110px;
+  text-align: center;
+  cursor: pointer;
+  z-index: 50;
+  top: 20px;
+  right: 20px;
+}
+.switch-lang:hover .lang-dropdown {
+  display: block;
+  position: absolute;
+}
+
+.switcher-link {
+  color: #fff;
+}
+.switcher-link:hover {
+  color: #fff;
+}
+
+.current-lang {
+  background: #34495e;
+  display: flex;
+  width: 110px;
+  justify-content: center;
+  padding: 3px 5px 0px 5px;
+  border-radius: 5px;
+}
+
+.lang-flag {
+  width: 20px;
+  display: inline-block;
+}
+
+.lang-text {
+  display: inline-block;
+  margin-left: 5px;
+  vertical-align: top;
+  margin-top: 2px;
+}
+
+.lang-dropdown {
+  display: none;
+  background: #34495e;
+  width: 110px;
+  border-radius: 5px;
+}
+
+.selecting-lang {
+  padding: 3px 5px 3px 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+}
+.selecting-lang:hover {
+  display: flex;
+  justify-content: center;
+  border-radius: 5px;
+  background: #8d9ba8;
+  color: black;
+  transition: all 0.5s;
+}
+
+ul > :first-child {
+  border-radius: 5px 5px 0px 0px;
+}
+
+ul > :last-child {
+  border-radius: 0px 0px 5px 5px;
+}
+
+li {
+  list-style-type: none;
+}
+
+.menu-arrow {
+  display: inline-block;
+  width: 10px;
+  margin-left: 10px;
+  vertical-align: top;
+  margin-top: 6px;
+}
+.switch-lang div img {
+  margin: 5px 0;
+}
+
+.active {
+  border-bottom: 2px solid white;
+  padding-bottom: 3px;
+}
+
+/* -----Footer---- */
+footer {
+  background-color: #000000;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  bottom: 0;
+  width: 100%;
+  padding-bottom: 50px;
+}
+.azercell {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.language {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.country {
+  display: flex;
+  background-color: black;
+  padding: 3px 15px 0.3px 15px;
+  border-radius: 2.1rem;
+  margin: 17px 0px;
+  border: 1px solid #3d3c39;
+}
+.country div {
+  margin: 9px;
+}
+.country .flag {
+  border-radius: 50%;
+  background-color: black;
+  text-align: center;
+  align-items: center;
+}
+.country img {
+  width: 30px;
+  height: 30px;
+}
+.tools1 {
+  padding: 5px 15px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.tools1 div {
+  margin: 10px 4px;
+}
+.tools1 div a {
+  color: white;
+}
+.tools2 {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.tools2 div {
+  margin: 10px 4px;
+}
+.tools2 div a {
+  color: white;
+}
+
+.footer2 {
+  margin-top: 0.5px;
+  display: flex;
+  align-items: start;
+  justify-content: space-around;
+}
+.footer2 .number {
+  display: flex;
+  flex-direction: column;
+}
+.numberBox {
+  background-color: #252627;
+  padding: 5px 2px;
+  border-radius: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+.numberBox i {
+  font-size: 30px;
+  margin: 8px 0 8x 4px;
+}
+.numberBox span {
+  font-size: 20px;
+  margin: 8px 0 8x 4px;
+}
+.Download {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.storeIcons {
+  display: flex;
+  align-items: start;
+}
+.storeIcons .icon {
+  background-color: #252627;
+  padding: 9px 8px;
+  border-radius: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 20px 20px 9px 0;
+}
+.storeIcons i {
+  color: white;
+  font-size: 28px;
+}
+.Media {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.Media .media-icon {
+  display: flex;
+  margin-top: 20px;
+}
+.media-icon .icon {
+  background-color: #252627;
+  margin: 10px 10px 10px 0;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  padding: 12px 14px;
+}
+.Media .media-icon .icon i {
+  color: white;
+  font-size: 28px;
+}
+
+.active {
+  border-bottom: 2px solid white;
+  padding-bottom: 3px;
+}
