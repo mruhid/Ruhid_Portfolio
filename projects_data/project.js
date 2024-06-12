@@ -13,7 +13,7 @@ const projects = [
         "image": "./image/storeApp.png",
         "languages": ["React.Js", "JavaScript", "Vite.js", "CSS", "Redux"],
         "github": "https://github.com/mruhid/StoreApp",
-        "link": "https://mruhid.github.io/Touring_App/"
+        "link": "https://mruhid.github.io/StoreApp/"
     },
     {
         "name": "WeatherApp",

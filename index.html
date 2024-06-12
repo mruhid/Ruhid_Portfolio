@@ -19,7 +19,8 @@
 
 
     <header>
-        <a href="#" class="logo">Ruhıd Memedzade</a>
+         <div class="menu_bar"><i id="menu-icon" class="fa-solid fa-bars"></i></div>
+        <a href="#" class="logo">Ruhıd Mammadzade</a>
         <ul class="navmenu">
 
             <li><a class="active" href="./index.html">Home</a></li>
@@ -54,6 +55,45 @@
     </header>
 
     <section class="home">
+        <div class="home-img2">
+
+            <img src="./image/MyPhoto.png" />
+
+        </div>
+
+        <div class="home-text">
+
+            <h2>Hello I'm Ruhıd <i class="ph-bold ph-hand-waving"></i></h2>
+
+            <h3>Front End Developer</h3>
+
+            <p>I'm Front End Developer based in Azerbaıjan,
+
+                and i'm very passionate and dedicated to my work.</p>
+
+            <div class="home-btn">
+
+                <a href="./contact.html" class="btn">Contact Info</a>
+
+                <a href="#" onclick="downloadPDF()" class="btn">Download CV <i class="ph ph-read-cv-logo"></i></a>
+
+            </div>
+
+        </div>
+
+        <div class="home-img">
+
+            <img src="./image/MyPhoto.png" />
+
+        </div>
+
+    </section>
+    <section class="home-mobile">
+        <div class="home-img2">
+
+            <img src="./image/MyPhoto.png" />
+
+        </div>
 
         <div class="home-text">
 
@@ -87,7 +127,7 @@
 
         <a href="https://www.instagram.com/ruhid__memmedzade/"><i class="ph-bold ph-instagram-logo"></i></a>
 
-        <a href="www.linkedin.com/in/ruhid-memmedzade-244a57228"><i class="ph-bold ph-linkedin-logo"></i></a>
+        <a href="https://www.linkedin.com/in/ruhid-memmedzade-244a57228"><i class="ph-bold ph-linkedin-logo"></i></a>
 
         <a href="https://github.com/mruhid"><i class="ph-bold ph-github-logo"></i></a>
 
@@ -134,7 +174,7 @@
 
     <footer class="footer2">
         <div class="number">
-            <div><span class="italic">My Number:</span></div>
+            <div class="footer-text"><span class="italic">My Number:</span></div>
             <div class="numberBox">
                 <span><a style="color: white;" href="tel:+994516944256">+994516944256</a><br></span>
             </div>
@@ -143,7 +183,7 @@
         </div>
 
         <div class="Download ">
-            <div><span class="italic">My Email</span></div>
+            <div class="footer-text"><span class="italic">My Email</span></div>
             <div class="storeIcons">
                 <div class="icon"><i class="fa-brands fa-at"></i>
                     <a style="color: white;" href="mailto:ruhidmammadzade@gmail.com"> ruhidmammadzade@gmail.com</a>
@@ -154,7 +194,7 @@
         </div>
 
         <div class="Media">
-            <div class="italic">Follow me</div>
+            <div class="footer-text"><span class="italic">Follow me</span></div>
 
             <div class="media-icon">
                 <div class="icon"><a style="color: white;"
@@ -175,30 +215,7 @@
 
 
     <script src="https://kit.fontawesome.com/4803176f5a.js" crossorigin="anonymous"></script>
-    <script>
-        function downloadPDF() {
-            // Path to the PDF file
-            const pdfPath = './CV/RuhidCV.pdf';
-
-            // Create a download link
-            const downloadLink = document.createElement('a');
-
-            // Set the href attribute to the PDF file path
-            downloadLink.href = pdfPath;
-
-            // Set the file name for the download
-            downloadLink.download = 'RuhidCV.pdf';
-
-            // Append the link to the body
-            document.body.appendChild(downloadLink);
-
-            // Trigger the click event to start the download
-            downloadLink.click();
-
-            // Remove the link from the DOM
-            document.body.removeChild(downloadLink);
-        }
-    </script>
+   <script src="./index,.js"></script>
 </body>
 
 </html>
