@@ -338,8 +338,22 @@ li h2 {
 .education1 {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+
+  text-align: center;
+}
+.education1 .place .about {
+  margin: 20px auto;
+  max-width: 700px;
+  width: 80%;
+}
+.education1 img {
+  max-width: 600px;
+  width: 80%;
 }
 .education1 .place {
+  max-width: 900px;
+  width: 80%;
   margin: 20px;
   text-align: center;
   background-color: #201658;
@@ -347,9 +361,7 @@ li h2 {
   padding: 20px;
   border-radius: 1rem;
 }
-.education1 .place p {
-  width: 540px;
-}
+
 .text-h1 {
   color: orangered;
   font-size: 60px;
@@ -550,8 +562,11 @@ footer {
 
 .current-lang {
   background: #34495e;
-  padding: 3px 5px 0px 5px;
+  display: flex;
+  width: 110px;
+  justify-content: center;
   border-radius: 5px;
+  padding: 7px 5px;
 }
 
 .lang-flag {
@@ -570,15 +585,18 @@ footer {
   display: none;
   background: #34495e;
   width: 110px;
-  margin-top: 1px;
   border-radius: 5px;
 }
 
 .selecting-lang {
   padding: 3px 5px 3px 5px;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
 }
 .selecting-lang:hover {
+  display: flex;
+  justify-content: center;
   border-radius: 5px;
   background: #8d9ba8;
   color: black;
@@ -659,33 +677,32 @@ li {
     font-size: 16px;
     text-align: center;
   }
-  .about_me img{
+  .about_me img {
     max-width: 300px;
     width: 80%;
     border-radius: 10%;
   }
- 
- .education1 {
-  display: block;
-  flex-direction: column;
-  text-align: center;
-  font-size: 15px;
- }
- .education1 .place {
-  max-width: 700px;
-  width: 80%;
- }
- .education1 .place .about {
-  margin: 20px auto;
-  max-width: 700px;
-  width: 80%;
- }
-  .education1 img{
+
+  .education1 {
+    display: block;
+    flex-direction: column;
+    text-align: center;
+    font-size: 15px;
+  }
+  .education1 .place {
+    max-width: 700px;
+    width: 80%;
+  }
+  .education1 .place .about {
+    margin: 20px auto;
+    max-width: 700px;
+    width: 80%;
+  }
+  .education1 img {
     max-width: 600px;
     width: 80%;
-
   }
-  
+
   .My_skiils ul {
     flex-direction: column;
   }
@@ -695,12 +712,12 @@ li {
     color: black;
     font-size: 20px;
   }
-.tools1{
-  flex-direction: column;
-}
-.azercell{
-  flex-direction: column;
-}
+  .tools1 {
+    flex-direction: column;
+  }
+  .azercell {
+    flex-direction: column;
+  }
   .footer2 {
     flex-direction: column;
   }
@@ -713,13 +730,13 @@ li {
   }
 }
 @media (max-width: 600px) {
-  .about_me{
+  .about_me {
     max-width: 500px;
     width: 80%;
     font-size: 11px;
     margin: 20px;
   }
-  .about_me .text h1{
+  .about_me .text h1 {
     font-size: 28px;
   }
   .azercell {
@@ -742,7 +759,7 @@ li {
     flex-direction: column;
     gap: 20px;
   }
-  .about_me{
+  .about_me {
     margin-top: 100px;
   }
 }
