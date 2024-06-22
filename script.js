@@ -58,6 +58,18 @@ for (let i = 0; i < circularProgress.length; i++) {
 }
 
 
+let menu = document.querySelector('#menu-icon');
+let navbar = document.querySelector('.navmenu');
+menu.onclick = () => {
+    menu.classList.toggle("fa-xmark")
+    navbar.classList.toggle("show")
+}
+window.onscroll = () => {
+    menu.classList.remove("fa-xmark")
+    navbar.classList.remove("show")
+}
+
+
 
 
 

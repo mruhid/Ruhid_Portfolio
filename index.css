@@ -101,7 +101,6 @@ header {
 }
 
 .home-text h3 {
-
   padding-left: 6rem;
 
   font-weight: 500;
@@ -344,7 +343,7 @@ li h2 {
   padding: 20px;
   border-radius: 1rem;
 }
-.home-mobile{
+.home-mobile {
   display: none;
 }
 .education1 .place p {
@@ -554,8 +553,7 @@ footer {
   width: 110px;
   justify-content: center;
   border-radius: 5px;
-  padding: 7px 5px ;
-
+  padding: 7px 5px;
 }
 
 .lang-flag {
@@ -618,7 +616,7 @@ li {
   display: none;
 }
 
-.home-img2{
+.home-img2 {
   display: none;
 }
 /* ------------------------------------ */
@@ -654,112 +652,137 @@ li {
   }
 }
 @media (max-width: 1000px) {
-.home-img img{
-width: 300px;
-}
-.home{
-  margin: 100px 10px;
+  .home-img img {
+    width: 300px;
   }
-  .home-text h2{
+  .home {
+    margin: 100px 10px;
+  }
+  .home-text h2 {
     font-size: 24px;
   }
-  .home-text h3{
+  .home-text h3 {
     font-size: 17px;
     text-align: center;
   }
-  .home-btn{
+  .home-btn {
     display: flex;
     flex-direction: column;
     gap: 10px;
-
   }
-  .btn{
+  .btn {
     width: 200px;
     font-size: 16px;
   }
 }
 
 @media (max-width: 780px) {
-  .home-img2{
+  .home-img2 {
     display: flex;
-    
   }
-  .home{
+  .home {
     display: none;
-   
   }
-  .home-mobile{
+  .home-mobile {
     display: flex;
     align-items: center;
     flex-direction: column;
     padding: 20px;
     margin: 130px 10px;
   }
-  .home-mobile h2{
+  .home-mobile h2 {
     text-align: center;
     padding: 10px;
   }
-  .home-mobile h3{
+  .home-mobile h3 {
     text-align: center;
     padding: 10px;
   }
-  .home-mobile p{
+  .home-mobile p {
     text-align: center;
     padding: 10px;
   }
-  .home-mobile .home-btn{
-flex-direction: row;
-justify-content: center;
-flex-wrap: wrap;
+  .home-mobile .home-btn {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
   }
-  .home-mobile .home-img2{
+  .home-mobile .home-img2 {
     padding: 10px;
     display: flex;
     justify-content: center;
   }
-  .home-mobile .home-img2 img{
+  .home-mobile .home-img2 img {
     width: 200px;
     border-radius: 50%;
   }
-  .home-mobile .home-img{
+  .home-mobile .home-img {
+    display: none;
+  }
+  .home-mobile .home-text .icons {
+    text-align: center;
+    padding: 10px;
+    flex-wrap: wrap;
+  }
+  .home-mobile .home-text .icons a {
+    color: #000000;
+    margin: 5px;
+    padding: 10px;
+    font-size: 35px;
+  }
+  .home-mobile .home-text .icons .instagram:hover {
+    padding: 4px 7px 1px 7px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: rgb(216, 8, 70);
+    color: white;
+  }
+  .home-mobile .home-text .icons .linkedin:hover {
+    padding: 4px 7px 1px 7px;
+    border-radius: 20px;
+    text-align: center;
+    background-color: rgb(8, 8, 88);
+    color: white;
+  }
+  .home-mobile .home-text .icons .github:hover {
+    padding: 4px 7px 1px 7px;
+    border-radius: 20px;
+    text-align: center;
+    background-color: rgb(44, 43, 43);
+    color: white;
+  }
+  .socials-icons {
+    display: none;
+  }
+  .scroll-btn {
     display: none;
   }
 
-  .socials-icons{
-    display: none;
-  }
-  .scroll-btn{
-    display: none;
-  }
-
-  .footer2{
+  .footer2 {
     flex-direction: column;
-
   }
-  .footer2>div{
+  .footer2 > div {
     margin: 10px auto;
     font-size: 16px;
   }
-  .footer-text{
+  .footer-text {
     margin: 10px auto;
-
   }
-  
 }
 
 @media (max-width: 600px) {
-  .azercell{
+  .azercell {
     flex-direction: column;
   }
-  .tools1{
+  .tools1 {
     flex-direction: column;
   }
-  .logo{
+  .logo {
     display: none;
   }
 }
 @media (max-width: 400px) {
-  header{
+  header {
     justify-content: space-around;
     flex-direction: column;
     gap: 20px;
