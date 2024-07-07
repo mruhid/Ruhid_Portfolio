@@ -3,9 +3,17 @@ const projects = [
         "name": "Touring_App",
         "description": "This program has everything you can do on a tour site. For example, to view and buy tour prices in any country.",
         "image": "./image/touringApp.png",
-        "languages": ["HTML", "JavaScript", "Sass", "CSS"],
+        "languages": ["HTML", "JavaScript", "Sass", "Daisy.ui", "Json-Server"],
         "github": "https://github.com/mruhid/Touring_App",
         "link": "https://mruhid.github.io/Touring_App/"
+    },
+    {
+        "name": "Todo App ",
+        "description": "With this program, you can work as a Note program for yourself. This Todo program was prepared using the Next.Js library and used the Typescript programming language. You can view the program through the link below.",
+        "image": "../image/TodoApp.png",
+        "languages": ["TypeScript", "Next.js", "Tailwind css", "CSS"],
+        "github": "https://github.com/mruhid/Todo_App",
+        "link": "https://todo-app-tau-lyart.vercel.app/"
     },
     {
         "name": "Store App",
