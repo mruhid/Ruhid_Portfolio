@@ -334,8 +334,11 @@ footer {
 
 .current-lang {
   background: #34495e;
-  padding: 3px 5px 0px 5px;
+  display: flex;
+  width: 110px;
+  justify-content: center;
   border-radius: 5px;
+  padding: 7px 5px;
 }
 
 .lang-flag {
@@ -354,15 +357,18 @@ footer {
   display: none;
   background: #34495e;
   width: 110px;
-  margin-top: 1px;
   border-radius: 5px;
 }
 
 .selecting-lang {
   padding: 3px 5px 3px 5px;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
 }
 .selecting-lang:hover {
+  display: flex;
+  justify-content: center;
   border-radius: 5px;
   background: #8d9ba8;
   color: black;

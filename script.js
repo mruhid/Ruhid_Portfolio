@@ -70,6 +70,9 @@ window.onscroll = () => {
 }
 
 
+// navbar path
+
+
 
 
 

@@ -89,6 +89,10 @@ header {
   gap: 1rem;
 }
 
+.menu-box{
+  display: flex;
+}
+
 .home-img img {
   width: 400px;
   height: auto;
@@ -624,6 +628,8 @@ li {
 @media (max-width: 1150px) {
   .navmenu {
     flex-direction: column;
+    width: 100%;
+    left: 0;
     position: absolute;
     top: -250px;
     box-shadow: 0 4px 4px rgba(0 0 0 0.1);
@@ -632,14 +638,21 @@ li {
   }
   .navmenu.show {
     padding: 15px;
+    left: 0;
     flex-direction: column;
     position: absolute;
     top: 100%;
-    border: 1px solid rgb(119, 114, 114);
-    background-color: white;
+    border: 1px solid rgb(206, 198, 198);
+    background-color: #f7f7f2;
+    opacity: 95%;
+  }
+  .navmenu.show a {
+    padding: 20px 50px;
+    font-size: 25px;
+    margin: 0 auto;
   }
   .navmenu.show a.active {
-    background-color: white;
+    background-color: #f7f7f2;
     color: #000000;
     border-radius: 0;
   }
@@ -673,6 +686,10 @@ li {
   .btn {
     width: 200px;
     font-size: 16px;
+  }
+  .menu-box{
+    flex-direction: column;
+    text-align: center;
   }
 }
 

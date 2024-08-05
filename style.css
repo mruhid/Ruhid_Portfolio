@@ -74,6 +74,9 @@ header {
 .navmenu a:hover {
   transform: translateY(-5px);
 }
+.menu-box {
+  display: flex;
+}
 
 .home {
   width: 100%;
@@ -637,11 +640,20 @@ li {
   margin: 5px;
 }
 
+.about_me-mobile {
+  display: none;
+}
+
+.education1-mobile {
+  display: none;
+}
 /* ------------------------------------ */
 /* responsive design */
 @media (max-width: 1150px) {
   .navmenu {
     flex-direction: column;
+    width: 100%;
+    left: 0;
     position: absolute;
     top: -250px;
     box-shadow: 0 4px 4px rgba(0 0 0 0.1);
@@ -650,14 +662,21 @@ li {
   }
   .navmenu.show {
     padding: 15px;
+    left: 0;
     flex-direction: column;
     position: absolute;
     top: 100%;
-    border: 1px solid rgb(119, 114, 114);
-    background-color: white;
+    border: 1px solid rgb(206, 198, 198);
+    background-color: #f7f7f2;
+    opacity: 97%;
+  }
+  .navmenu.show a {
+    padding: 20px 50px;
+    font-size: 25px;
+    margin: 0 auto;
   }
   .navmenu.show a.active {
-    background-color: white;
+    background-color: #f7f7f2;
     color: #000000;
     border-radius: 0;
   }
@@ -667,6 +686,11 @@ li {
 
   .menu_bar {
     display: block;
+  }
+
+  .menu-box {
+    flex-direction: column;
+    text-align: center;
   }
 }
 
@@ -727,6 +751,77 @@ li {
   }
   .footer-text {
     margin: 10px auto;
+  }
+}
+@media (max-width: 650px) {
+  .about_me {
+    display: none;
+  }
+  .about_me-mobile {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 150px;
+  }
+  .about_me-mobile .my_image-mobile {
+    padding: 10px;
+  }
+  .about_me-mobile .my_image-mobile img {
+    max-width: 300px;
+
+    width: 90%;
+  }
+  .about_me-mobile .text-mobile {
+    gap: 20px;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .about_me-mobile .text-mobile .title {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 0px;
+    text-align: center;
+    justify-content: center;
+  }
+  .about_me-mobile .text-mobile .me {
+    padding: 5px 10px;
+    text-align: center;
+    margin: 15px 0;
+  }
+
+  .education1 {
+    display: none;
+  }
+  .education1-mobile {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    gap: 40px 10px;
+    color: white;
+  }
+  .education1-mobile .place {
+    background-color: #201658;
+    border-radius: 30px;
+  }
+  .education1-mobile .place .study_place {
+    margin: 20px 5px;
+    max-width: 600px;
+    width: 90%;
+  }
+  .education1-mobile .place .about {
+    display: flex;
+    text-align: center;
+    margin: 20px;
+    padding: 10px;
+    font-size: 15px;
+  }
+  .education1-mobile .place .btn {
+    margin: 20px 5px;
   }
 }
 @media (max-width: 600px) {

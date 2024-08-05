@@ -75,6 +75,10 @@ header {
 .navmenu a:hover {
   transform: translateY(-5px);
 }
+.menu-box {
+  display: flex;
+}
+
 /* ----projects---- */
 #projects {
   padding: 20px;
@@ -107,7 +111,6 @@ header {
 }
 .project_img img {
   width: 600px;
-  height: 400px;
   object-fit: contain;
 }
 .technology {
@@ -377,4 +380,134 @@ footer {
 .active {
   border-bottom: 2px solid white;
   padding-bottom: 3px;
+}
+/* ================= */
+
+.menu_bar {
+  display: none;
+}
+
+#test {
+  text-align: start;
+}
+#test span {
+  margin: 5px;
+}
+
+.technology li:hover {
+  color: #543dd8;
+}
+/* ------------------------------------ */
+/* responsive design */
+@media (max-width: 1150px) {
+  .navmenu {
+    flex-direction: column;
+    width: 100%;
+    left: 0;
+    position: absolute;
+    top: -250px;
+    box-shadow: 0 4px 4px rgba(0 0 0 0.1);
+    transition: 0.4s ease;
+    text-align: left;
+  }
+  .navmenu.show {
+    padding: 15px;
+    left: 0;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    border: 1px solid rgb(206, 198, 198);
+    background-color: #f7f7f2;
+    opacity: 97%;
+  }
+  .navmenu.show a {
+    padding: 20px 50px;
+    font-size: 25px;
+    margin: 0 auto;
+  }
+  .navmenu.show a.active {
+    background-color: #f7f7f2;
+    color: #000000;
+    border-radius: 0;
+  }
+  .navmenu.show li a:hover {
+    border-bottom: 1px solid black;
+  }
+
+  .menu_bar {
+    display: flex;
+  }
+
+  .menu-box {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media (max-width: 780px) {
+  .tools1 {
+    flex-direction: column;
+  }
+  .azercell {
+    flex-direction: column;
+  }
+  .footer2 {
+    flex-direction: column;
+  }
+  .footer2 > div {
+    margin: 10px auto;
+    font-size: 16px;
+  }
+  .footer-text {
+    margin: 10px auto;
+  }
+}
+
+@media (max-width: 650px) {
+  #projects {
+    gap: 20px 10px;
+  }
+  .project .project_img {
+    padding: 10px;
+  }
+
+  .project .project_img img {
+    max-width: 620px;
+    width: 90%;
+  }
+
+  .azercell {
+    flex-direction: column;
+  }
+  .tools1 {
+    flex-direction: column;
+  }
+  .logo {
+    display: none;
+  }
+  .italic {
+    margin: 10px auto;
+  }
+}
+
+@media (max-width: 400px) {
+  header {
+    justify-content: space-around;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .about_me {
+    margin-top: 100px;
+  }
+
+  #projects {
+    gap: 20px 10px;
+    margin-top: 120px;
+  }
+  .technology {
+    background-color: white;
+    color: #000000;
+    border-radius: 10px;
+    padding: 10px;
+  }
 }

@@ -13,16 +13,18 @@
         <div class="menu_bar"><i id="menu-icon" class="fa-solid fa-bars"></i></div>
         <a href="#" class="logo">Ruhıd Mammadzade</a>
         <ul class="navmenu">
+<div class="menu-box" >
+    <li><a id="index-link"  href="/">Home</a></li>
 
-            <li><a class="active" href="./index.html">Home</a></li>
+            <li><a  id="about-link" class="active" href="./about.html">About</a></li>
 
-            <li><a href="./about.html">About</a></li>
+            <li><a id="skills-link" href="./skills.html">Skills</a></li>
 
-            <li><a href="./skills.html">Skills</a></li>
+            <li><a id="procets-link" href="./projects.html">Projects</a></li>
 
-            <li><a href="./projects.html">Projects</a></li>
-
-            <li><a href="./contact.html">Contact</a></li>
+            <li><a id="contact" href="./projects.html">Contact</a></li> 
+</div>
+           
 
         </ul>
 
@@ -66,7 +68,28 @@
         </div>
     </section>
 
-    
+    <section class="about_me-mobile">
+        <div class="my_image-mobile">
+            <img src="./image/myPicture2.jpeg" alt="">
+
+        </div>
+        <div class="text-mobile">
+            <div class="title">
+                <h1>Ruhid Memmedzade</h1>
+                <h1 style="color: orangered;">Always improve yourself</h1>
+            </div>
+            <div class="me">
+                <span>I am a Frontend developer with two years of experience. I started learning programming since
+                    university years. Above all, I believe that what is always learning and improving is the key to
+                    success. Along with my programming courses, I also learn from unbiased and timely additional sources
+                    and try to find bugs.</span>
+            </div>
+            <div><a class="btn" href="./projects.html">See my projects</a></div>
+
+        </div>
+    </section>
+
+
     <section class="education">
         <h1 class="text-h1">My Study</h1>
 
@@ -88,7 +111,7 @@
     </section>
 
 
-
+    <!-- Education section -->
     <section class="education1">
         <div class="place">
             <div>
@@ -98,8 +121,67 @@
                 </div>
                 <h3 class="count">ASOIU</h3>
             </div>
+            <h3 class="count">Bachelor</h3>
+            <strong>Year:<span>2020-2024</span></strong>
+            <div><strong>GPA:<span>84.7</span></strong></div>
+            <h3>Computer Engineer</h3>
+            <p class="about">During these years, I learned the computer's operating structure and coding for the first
+                time</p>
+        </div>
+
+
+        <div class="place">
+            <div>
+                <img class="study_place"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Ufaz_logo.png/1200px-Ufaz_logo.png"
+                    alt="">
+                <div class="uniName">
+                    <h3 class="count">2)</h3>
+                </div>
+                <h3 class="count">UFAZ</h3>
+            </div>
 
             <strong>Year:<span>2020-2024</span></strong>
+            <h3>Backend Developer(Node.JS)</h3>
+            <p class="about">Here we were able to work with backend knowledge and mysql, express and many java script
+                libraries. At the end of the course, I completed the course with the highest grade certificate.</p>
+            <a class="btn" href="">See certificate!</a>
+        </div>
+
+        <div class="place">
+            <div>
+                <img class="study_place"
+                    src="https://unikal.az/photos/unikal/1702902439_Screenshot%202023-12-18%20162709.png" alt="">
+                <div class="uniName">
+                    <h3 class="count">3)</h3>
+                </div>
+                <h3 class="count">UNEC</h3>
+            </div>
+            <h3>Master:</h3>
+            <strong>Year:<span>2024-2026</span></strong>
+            <h3> Computer Science</h3>
+            <p class="about">
+                During the years of my master's education, I further increased my knowledge level. The main reason why I
+                have reached these levels today is that I received a bachelor's and master's degree in two leading
+                universities of my country. These universities are ADNSU and UNEC.</p>
+        </div>
+
+    </section>
+
+    <!-- Mobile responsive design for education section -->
+    <section class="education1-mobile">
+        <div class="place">
+            <div>
+                <img class="study_place" src="https://iconape.com/wp-content/files/gz/192527/png/192527.png" alt="">
+                <div class="uniName">
+                    <h3 class="count">1)</h3>
+                </div>
+                <h3 class="count">ASOIU</h3>
+            </div>
+            <h3 class="count">Bachelor</h3>
+
+            <strong>Year:<span>2020-2024</span></strong>
+            <strong>GPA:<span>84.7</span></strong>
             <h3>Computer Engineer</h3>
             <p class="about">During these years, I learned the computer's operating structure and coding for the first
                 time</p>
@@ -122,10 +204,26 @@
                 libraries. At the end of the course, I completed the course with the highest grade certificate.</p>
             <a class="btn" href="">See certificate!</a>
         </div>
+        <div class="place">
+            <div>
+                <img class="study_place"
+                    src="https://unikal.az/photos/unikal/1702902439_Screenshot%202023-12-18%20162709.png" alt="">
+                <div class="uniName">
+                    <h3 class="count">3)</h3>
+                </div>
+                <h3 class="count">UNEC</h3>
+            </div>
+            <h3 class="count">Master</h3>
+
+            <strong>Year:<span>2024-2026</span></strong>
+            <h3>Computer Science</h3>
+            <p class="about">During the years of my master's education, I further increased my knowledge level. The
+                main reason why I have reached these levels today is that I received a bachelor's and master's degree in
+                two leading universities of my country. These universities are ADNSU and UNEC.</p>
+        </div>
+
     </section>
-
-
-
+<!-- MY Skills -->
     <section class="My_skiils">
         <h1 class="h1">My Skills</h1>
 
@@ -192,8 +290,8 @@
             </div>
 
             <div class="tools1">
-                <div><a href="./index.html">Home</a></div>
-                <div><a class="active" href="./index.html">About</a></div>
+                <div><a href="/">Home</a></div>
+                <div><a class="active" href="./about.html">About</a></div>
                 <div><a href="./skills.html">Skills</a></div>
                 <div><a href="./projects.html">Projects</a></div>
                 <div><a href="./contact.html">Contact</a></div>
@@ -211,7 +309,7 @@
 
     <footer class="footer2">
         <div id="test" class="number">
-            <div class="footer-text"><span  class="italic">My Number:</span></div>
+            <div class="footer-text"><span class="italic">My Number:</span></div>
             <div class="numberBox">
                 <span><a style="color: white;" href="tel:+994516944256">+994516944256</a><br></span>
             </div>
